@@ -1,0 +1,34 @@
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#0b1020;background:#ffffff}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.nav a{margin-left:16px;text-decoration:none;color:#1b2240;font-weight:600}
+.brand{font-weight:800;letter-spacing:.4px}
+.hero{background:linear-gradient(180deg,#f3f6ff 0%,#ffffff 100%);padding:72px 0;border-bottom:1px solid #e9eefc}
+.hero-inner{display:flex;align-items:center;justify-content:center;min-height:40vh;text-align:center}
+.hero h1{font-size:40px;line-height:1.1;margin:0 0 12px}
+.hero p{font-size:18px;margin:0 0 24px;color:#3b4668}
+.section{padding:56px 0}
+.section.alt{background:#f9fbff;border-top:1px solid #eef3ff;border-bottom:1px solid #eef3ff}
+h2{font-size:28px;margin:0 0 24px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border:1px solid #e9eefc;border-radius:14px;padding:18px}
+.card h3{margin-top:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:#fff;border:1px solid #e9eefc;border-radius:14px;padding:18px;display:flex;gap:12px;align-items:flex-start}
+.step span{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#1b6bff;color:#fff;font-weight:700}
+.note{margin-top:12px;color:#5b668a}
+.price-card{border:1px solid #e9eefc;border-radius:16px;padding:24px;background:#fff;max-width:720px}
+.price{font-size:36px;font-weight:800;margin:12px 0}
+.guarantee{color:#3b4668}
+.btn{display:inline-block;padding:12px 18px;border-radius:999px;border:1px solid #1b6bff;text-decoration:none}
+.btn-primary{background:#1b6bff;color:#fff;border-color:#1b6bff}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:12px}
+input,textarea{width:100%;padding:12px;border:1px solid #d7def2;border-radius:10px;font:inherit}
+.hidden{display:none}
+.sla{color:#3b4668;margin-top:8px}
+.footer{padding:28px 0;border-top:1px solid #eef3ff;color:#67708f;text-align:center}
+.thanks{min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+@media (max-width:768px){
+  .grid-3,.steps,.form-grid{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+}

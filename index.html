@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automação Expressa com IA | WProjects</title>
+  <meta name="description" content="Automatize tarefas manuais com IA + APIs. Entrega em 24h, ROI imediato.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand">WProjects</div>
+    <nav>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#preco">Preço</a>
+      <a href="#form">Começar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Automação Expressa com IA — entrega em 24h</h1>
+        <p>Elimine tarefas manuais e repetitivas com IA + APIs. Ganho de tempo imediato e ROI visível.</p>
+        <a class="btn btn-primary" href="#form">Automatizar minha tarefa agora</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="container section">
+    <h2>Benefícios imediatos</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Tempo</h3>
+        <p>Reduza horas de trabalho manual em até 24h após o briefing.</p>
+      </div>
+      <div class="card">
+        <h3>Qualidade</h3>
+        <p>Relatórios automáticos (Excel/PDF) prontos para uso e sem erros.</p>
+      </div>
+      <div class="card">
+        <h3>Integração</h3>
+        <p>APIs e sistemas (CRM, Financeiro, Compliance) conectados rapidamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="container section alt">
+    <h2>Como funciona</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><p><strong>Briefing (15 min):</strong> você mostra a tarefa, arquivos e/ou sistema.</p></div>
+      <div class="step"><span>2</span><p><strong>Implementação com IA/RPA:</strong> construímos o fluxo e testamos com seus dados.</p></div>
+      <div class="step"><span>3</span><p><strong>Entrega em 24h:</strong> você recebe a automação rodando + instruções simples.</p></div>
+    </div>
+    <p class="note">Projetos complexos podem exigir 48–72h (confirmamos no briefing).</p>
+  </section>
+
+  <section id="preco" class="container section">
+    <h2>Oferta de lançamento</h2>
+    <div class="price-card">
+      <h3>Plano Automação Expressa</h3>
+      <ul>
+        <li>1 tarefa/processo automatizado</li>
+        <li>Setup + teste + instruções</li>
+        <li>Suporte pós-entrega para pequenos ajustes</li>
+      </ul>
+      <div class="price">R$ 1.600</div>
+      <p class="guarantee">Garantia: se não economizar pelo menos 5h/mês, ajustamos até funcionar.</p>
+      <a class="btn btn-primary" href="#form">Quero automatizar</a>
+    </div>
+  </section>
+
+  <section id="form" class="container section alt">
+    <h2>Solicitar Automação</h2>
+    <!-- Netlify Forms: data-netlify + hidden form-name + honeypot -->
+    <form name="automation-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado">
+      <input type="hidden" name="form-name" value="automation-request">
+      <p class="hidden">
+        <label>Não preencha: <input name="bot-field"></label>
+      </p>
+
+      <div class="form-grid">
+        <label>Nome*
+          <input type="text" name="nome" required>
+        </label>
+        <label>Empresa
+          <input type="text" name="empresa">
+        </label>
+        <label>E-mail*
+          <input type="email" name="email" required>
+        </label>
+        <label>WhatsApp
+          <input type="tel" name="whatsapp" placeholder="(11) 99999-9999">
+        </label>
+      </div>
+      <label>Descreva a tarefa a automatizar*
+        <textarea name="descricao" rows="6" required placeholder="Ex.: gerar relatório mensal a partir de 3 planilhas do Google Sheets..."></textarea>
+      </label>
+      <button class="btn btn-primary" type="submit">Enviar pedido</button>
+      <p class="sla">Resposta em até <strong>2 horas úteis</strong>.</p>
+    </form>
+  </section>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> WProjects • Automação e IA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
