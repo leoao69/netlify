@@ -28,6 +28,29 @@ input,textarea{width:100%;padding:12px;border:1px solid #d7def2;border-radius:10
 .sla{color:#3b4668;margin-top:8px}
 .footer{padding:28px 0;border-top:1px solid #eef3ff;color:#67708f;text-align:center}
 .thanks{min-height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.menu-bar {
+  background: #1b6bff;   /* primary blue */
+  border: none;
+}
+
+.menu-bar .nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 14px 0;
+}
+
+.menu-bar .nav a {
+  text-decoration: none;
+  color: #ffffff;       /* white text for contrast */
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu-bar .nav a:hover {
+  color: #ffd700;       /* gold hover effect */
+}
+
 @media (max-width:768px){
   .grid-3,.steps,.form-grid{grid-template-columns:1fr}
   .hero h1{font-size:32px}
