@@ -216,7 +216,7 @@ input, textarea {
   .menu-bar .nav a { white-space: nowrap; padding: 6px 8px; }
 
   /* Logo scaling on small screens */
-  .brand img { height: 48px; }
+  .brand img { height: 60px; }
 }
 
 @media (max-width: 480px) {
